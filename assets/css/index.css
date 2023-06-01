@@ -1,5 +1,6 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,200&family=Kumbh+Sans:wght@400;700&family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Mulish:wght@300;400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap');:root {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Karla:ital,wght@1,200&family=Kumbh+Sans:wght@400;700&family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Mulish:wght@300;400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Raleway:wght@100;200;300&display=swap');
+:root {
     --header-height: 3.5rem;
   
     /*========== Colors ==========*/
@@ -8,7 +9,7 @@
     --title-color: hsl(207, 4%, 16%);
     --text-color: hsl(207, 4%, 28%);
     --text-color-light: hsl(207, 4%, 56%);
-    --body-color: hsl(0, 0%, 100%);
+    --body-color: hsl(0, 0%, 92%);
     --container-color: hsl(207, 4%, 95%);
   
     /* Change the first number */
@@ -78,13 +79,13 @@
 
   h3 {
     color: var(--title-color);
-    font-family: mulish,san-serif;
-    font-size: 2rem;
+    font-family: Raleway,san-serif;
+    font-size: 2.5rem;
     font-weight: 300;
   }
 
   p {
-    font-family: mulish,san-serif;
+    font-family: Inter,san-serif;
     font-size: large;
     line-height: 2;
   }
@@ -122,45 +123,72 @@
   .grid {
     margin-top: 50px;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 0.5fr 2fr 0.5fr;
     row-gap: 1em;
   }
 
   .experiences {
-    margin-top: 200px;
-    height: 400px;
+    grid-column: 2 / 5;
+  }
+
+  .experience {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 2em;
   }
 
   .projects {
     margin-top: 50px;
     display: grid;
-    grid-template-columns: .5fr 3fr .5fr 3fr .5fr;
-    grid-template-rows: 1fr 30px .25fr;
+    grid-template-columns: .5fr 20px 3fr 20px .75fr 20px 3fr 20px .5fr;
+    grid-template-rows: 30px 1fr 20px .9fr;
     column-gap: 1em;
   }
 
+  .container1 {
+    grid-row: 1 / 5;
+    grid-column: 2  / 5;
+    border-radius: 30px;
+    border-width: 1;
+    border-style: solid;
+    border-color: grey;
+  }
+
+  .container2 {
+    grid-row: 1 / 5;
+    grid-column: 6 / 9;
+    border-radius: 30px;
+    border-width: 1;
+    border-style: solid;
+    border-color: grey;
+  }
 
   .cover1{
-    grid-row: 1;
-    grid-column: 2 ;
+    grid-row: 2;
+    grid-column: 3 / 4 ;
   }
 
   .cover2{
-    grid-row: 1;
-    grid-column: 4;
+    grid-row: 2;
+    grid-column: 7 / 8;
   }
 
   .description1 {
-    grid-row: 3;
-    grid-column: 2;
+    grid-row: 4;
+    grid-column: 3;
   }
 
   .description2 {
-    grid-row: 3;
-    grid-column: 4;
+    grid-row: 4;
+    grid-column: 7;
   }
 
   img {
     /* filter: drop-shadow(10px 10px 10px hsl(207, 4%, 56%)); */
-    border-radius: 5px;
+    border-radius: 15px;
+  }
+
+  .date {
+    color: lightgrey;
+    font-size: x-large;
   }
