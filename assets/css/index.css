@@ -137,6 +137,15 @@
     margin: 30px 0;
   }
 
+  .icon {
+    height: 40px;
+    margin: 10px 5px;
+  }
+  .icon2 {
+    height: 51px;
+    margin: 5px 5px;
+  }
+
   /* work experiences grid */
   .grid {
     margin-top: 50px;
@@ -154,11 +163,17 @@
     margin-top: 10px;
     font-size: 1.3em;
     font-weight: 1500;
-    padding-left: 100px;
+    padding-left: 250px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
   .experience-p {
-    padding-left: 100px;
+    padding-left: 250px;
+  }
+  .experience-num {
+    line-height: 0;
+    font-size: 4em;
+    color: rgb(223, 221, 221);
+    /* color: #fff2c8; */
   }
 
   .projects {
