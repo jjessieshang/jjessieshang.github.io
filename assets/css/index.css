@@ -73,9 +73,12 @@
   }
 
   h2 {
+    padding-top: 100px;
     color: var(--title-color);
     font-family: "Helvetica Neue";
-    font-size: 2rem;
+    font-size: 4rem;
+    text-align: left;
+    font-weight: bold;
   }
 
   h3 {
@@ -176,96 +179,87 @@
     /* color: #fff2c8; */
   }
 
+
+/*  project grid */
+
   .projects {
-    margin-top: 30px;
+    margin-bottom: 4rem;
     display: grid;
-    grid-template-columns: .5fr 20px 3fr 20px .75fr 20px 3fr 20px .5fr;
-    grid-template-rows: 30px 1fr 20px .7fr .2fr;
-    column-gap: 1em;
+    grid-template-columns: 3.25fr .25fr 3.25fr;
+    grid-template-rows: 1fr 1fr .25fr;
+    column-gap: 2em;
+
   }
 
-  .container1 {
-    grid-row: 1 / 6;
-    grid-column: 2  / 5;
+  .container1,
+  .container2 {
+    text-align: left;
+    background-color: white;
+    grid-row: 1 / 4;
+    grid-column: 1;
     border-radius: 30px;
     border-width: 1.5px;
     border-style: solid;
     border-color: grey;
+    transition: all 0.4s ease-in-out;
   }
 
   .container2 {
-    grid-row: 1 / 6;
-    grid-column: 6 / 9;
-    border-radius: 30px;
-    border-width: 1.5px;
-    border-style: solid;
-    border-color: grey;
-  }
-
-  .cover1{
-    grid-row: 2;
-    grid-column: 3 / 4 ;
-  }
-
-  .cover2{
-    grid-row: 2;
-    grid-column: 7 / 8;
-  }
-
-  .description1 {
-    grid-row: 4;
     grid-column: 3;
   }
 
-  .description2 {
-    grid-row: 4;
-    grid-column: 7;
+  .container1:hover,
+  .container2:hover {
+    background-color: black;
+    cursor: pointer;
   }
 
-  img {
-    /* filter: drop-shadow(10px 10px 10px hsl(207, 4%, 56%)); */
-    border-radius: 15px;
+  .container1:hover p,
+  .container2:hover p,
+  .container1:hover h3,
+  .container2:hover h3{
+    color: rgb(199, 199, 199);
+  }
 
+  .project-page {
+    text-decoration: none;
+    color: initial;
+}
+
+  .description {
+    grid-row: 2;
+    grid-column:inherit;
+    margin: 0 2rem;
+    height: 10rem;
   }
 
   .skill {
-    grid-row: 5;
-    border-radius: 30px;
+    grid-row: 3;
+    height: 40px;
+    margin: 2rem 2rem;
+    grid-column: inherit;
+  }
+
+  .skill p {
+    display: inline;
+    padding: .5rem 1rem;
+    border-radius: 10px;
     border-width: 1.5px;
     border-style: solid;
     border-color: rgb(185, 183, 183);
-    height: 40px;
-    width: 150px;
-    grid-column: 3;
-    text-align: center
-    ;
-  }
-
-  .date {
-    grid-row: 5;
     color: rgb(174, 171, 171);
     font-size: x-large;
-    grid-column: 3;
-    vertical-align: middle;
+    margin-right: 1rem;
   }
 
-  .skill2 {
-    grid-row: 5;
-    border-radius: 30px;
-    border-width: 1.5px;
-    border-style: solid;
-    border-color: rgb(185, 183, 183);
-    height: 40px;
-    width: 150px;
-    grid-column: 7;
-    text-align: center
-    ;
+  .cover {
+    grid-column: inherit;
   }
 
-  .date2 {
-    grid-row: 5;
-    color: rgb(174, 171, 171);
-    font-size: x-large;
-    grid-column: 7;
-    vertical-align: middle;
+  .cover img {
+    margin: 2rem;
+    display: block;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 15px;
   }
