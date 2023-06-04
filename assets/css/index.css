@@ -84,15 +84,15 @@
   h3 {
     color: var(--title-color);
     font-family: "Helvetica Neue";
-    font-stretch:expanded;
-    font-size: 2.5rem;
+    /* font-stretch:expanded; */
+    font-size: 3rem;
     font-weight: 300;
   }
 
   p {
     font-family: Inter,san-serif;
-    font-size: large;
-    line-height: 1;
+    font-size: 16px;
+    line-height: 2;
   }
 
   /* navbar */
@@ -208,6 +208,13 @@
     grid-column: 3;
   }
 
+  .container1 p,
+  .container2 p,
+  .container1 h3,
+  .container2 h3{
+    transition: all 0.4s ease-in-out;
+  }
+
   .container1:hover,
   .container2:hover {
     background-color: black;
@@ -248,7 +255,7 @@
     border-style: solid;
     border-color: rgb(185, 183, 183);
     color: rgb(174, 171, 171);
-    font-size: x-large;
+    font-size: 16px;
     margin-right: 1rem;
   }
 
