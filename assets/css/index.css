@@ -137,7 +137,7 @@
   }
 
   hr {
-    margin: 30px 0;
+    margin: 25px 0;
   }
 
   .icon {
@@ -163,8 +163,9 @@
   }
   .experience-num {
     line-height: 0;
-    font-size: 4em;
-    color: rgb(223, 221, 221);
+    margin-top: 19px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
     /* color: #fff2c8; */
   }
 
@@ -176,6 +177,7 @@
   }
 
   .plus {
+    margin-top: 20px;
     transition: all 0.5s;
   }
 
@@ -194,7 +196,7 @@
   .read-more--open{
     display: block;
     opacity: 1;
-    height: 5rem;
+    height: 18rem;
   }
 
 
