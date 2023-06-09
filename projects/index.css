@@ -1,0 +1,11 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Karla:ital,wght@1,200&family=Kumbh+Sans:wght@400;700&family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Mulish:wght@300;400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Raleway:wght@100;200;300&display=swap');
+
+.project-title {
+    font-size: 6em;
+    font-weight: 500;
+}
+
+img {
+    height: 300px;
+}

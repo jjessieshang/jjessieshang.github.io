@@ -54,9 +54,9 @@
   }
   
   body {
-    max-width: 1280px;
-    margin: 0 auto !important; 
-	float: none !important; 
+    width: 80%;
+    margin: 0 auto;
+    float: none;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
@@ -131,7 +131,13 @@
   .profile-words{
     grid-column: 2;
     grid-row: 1;
-  }  .me {
+  }  
+
+  .profile-words p{
+    font-size: 18px;
+  }
+  
+  .me {
     grid-column: 1;
     grid-row: 1;
   }
@@ -286,7 +292,6 @@
   .cover img {
     margin: 2rem;
     display: block;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin: 2rem 2rem;
     border-radius: 15px;
   }
