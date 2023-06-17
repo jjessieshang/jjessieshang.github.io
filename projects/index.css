@@ -31,8 +31,14 @@ a {
 
 .main-image {
     display: block;
-    margin: 15px auto;
+    margin: 20px auto;
 
+}
+
+li {
+    margin-left: 50px;
+    font-size: 16px;
+    line-height: 2;
 }
 
 .body-text {
@@ -46,4 +52,9 @@ img {
 
 .hyrs {
     height: 700px;
+}
+
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
 }

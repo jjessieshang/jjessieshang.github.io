@@ -19,27 +19,46 @@
 </header>
 <body>
     <div class="project">
-        <h3 class="project-title">audio biofeedback sensor</h3>
-        <img src="../assets/enable.png" alt="enable">
-        <p>2022</p>
-        <p>Role: Software Engineer</p> 
-        <p>Technologies: C, Arduino, MATLAB, Bluetooth, Circuit Design</p>
-        <p>Stakeholder: Tetra Society & Simon Cox Design Competition 2022</p>
-
-        <p>Problem: Prolonged involuntary muscle activation of the trapezius muscle creates back pain 
+        <h3 class="project-title" style="font-size: 5.5em;">biofeedback sensor</h3>
+        <img class="main-image" src="../assets/enable.png" alt="enable">
+        <p><strong>Date: </strong>Spring 2022</p>
+        <p><strong>Role:</strong> Software Engineer</p> 
+        <p><strong>Skills:</strong> C, Arduino, MATLAB, Bluetooth, Circuit Design</p>
+        <p><strong>Company:</strong> UBC Biomedical Engineering Student Team</p>
+        <img style="height: 50px; margin-top: 10px; margin-bottom: 30px;"src="../assets/git.png" alt="git">
+        <br>
+        <p><strong>2022 Simon Cox Design Competition Finalist!</strong></p>
+        <hr>
+        <p class="body-text"><strong>The Problem </strong><br>
+            Prolonged involuntary muscle activation of the trapezius muscle creates back pain 
             in patients with mobility impairments.
         </p>
-        <p>Solution: <br>
+        <p class="body-text"><strong>Our Solution </strong><br>
             We created a small, wearable device which detects muscle activation and 
-            provides audible feedback to the client's headset via Bluetooth <br>
-
-            I established a pipeline to transfer signals from the arduino device, through a 
-            bluetooth module to be received by a computer, and directly passed into the MATLAB
-            software for signal processing. 
+            notifies the user via Bluetooth audio feedback to the client's headset. We built our 
+            prototype while adhering to these design needs:<br>
         </p>
-
-        <img src="../assets/Notes-24.jpg" alt="sketch">
-  
+        <ul>
+            <li><strong>Pain relief:</strong> awareness to relax muscles before they cause tension and pain</li>
+            <li><strong>Independence:</strong> gives the client an ability to rehabilitate in their own time</li>
+            <li><strong>Portability:</strong> inconspicuous design allows for all-day wear</li>
+          </ul>            
+          <p class="body-text"><strong>Audio Feedback </strong><br>
+            I established a pipeline using serial port communication to read streaming data from an Arduino HC-05 into 
+            MATLAB. In MATLAB, I analyzed live electromyography signals to identify voltage thresholds which relate to 
+            muscle activations. Then, these thresholds were used to automatically signal a piezo buzzer.<br>
+        </p>
+        <hr>
+        <div class="banner">
+            <div class="inline-block">
+                <p class="body-text" ><strong>Prototype Sketch</strong></p>
+                <img height="250px" src="../assets/Notes-24.jpg" alt="sketch">
+            </div>
+            <div class="inline-block">
+                <p class="body-text" style="margin-bottom: 25px;"><strong>Prototype Demo</strong></p>
+                <video height="300px"  src="../assets/enable.mov" controls></video>
+            </div>
+        </div>
     </div>
 </body>
 </html>
