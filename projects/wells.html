@@ -5,9 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/index.css">
+    <link rel="stylesheet" href="index.css">
 </head>
+<header class="header">
+    <a href="../index.html" class="logo">JS</a>
+
+    <!-- menu -->
+    <nav class="navbar">
+        <a href="#">About</a>
+        <a href="#">Data</a>
+    </nav>
+</header>
 <body>
-    <h1>WELLS</h1>
-    <p>This page is a work in progress</p>
+    <div class="project">
+        <h3 class="project-title">alberta well locator</h3>
+        <img src="../assets/wells.png" alt="wells">
+        <p>2022</p>
+        <p>Role: Software Engineer Intern</p>
+        <p>Technologies: Flask, Folium, Python (Pandas, NumPy), SQLite</p>
+        <p>Stakeholder: BitCan Geosciences</p>
+    
+        <p>Problem: <br>Geoscientists at this firm required a tool to make the well selection process more efficient.
+        </p>
+        <p>Solution: <br>The Alberta Well Locator Program is a data visualisation tool that allows the user to interact 
+            with BitCan’s directory of well sites. Given any input Unique Well Identifier (UWI), the web app maps the 
+            point of interest, calculates the distance between the input UWI and all existing well sites, and displays 
+            rock lithology, in-situ, and mechanical properties associated with each well.
+        </p>
+        <p>Data processing: <br> Using Pandas and NumPy, I plotted the Alberta Dominion Land Survey Grid as a planar 
+            projection and utilized the Alberta Township System (ATS) version 4.1 (NAD83) dataset to convert the entire 
+            set of Unique Well Identifier Numbers to geographical coordinates. This mapping tool then computes the distance 
+            between well locations by applying the Haversine Formula for great-circle distance.</p>
+
+        <img src="../assets/bitcan/data.png" alt="">
+        <img src="../assets/bitcan/popup.png" alt="">
+
+    </div>
+
 </body>
 </html>
