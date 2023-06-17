@@ -143,7 +143,10 @@
   }
 
   hr {
-    margin: 25px 0;
+    height: 0px;
+    border: none;
+    border-top: 0.5px solid black;
+    margin: 20px 0;
   }
 
   .icon {
@@ -229,7 +232,7 @@
     grid-row: 1 / 4;
     grid-column: 1;
     border-radius: 30px;
-    border-width: 1.5px;
+    border-width: 1px;
     border-style: solid;
     border-color: grey;
     transition: all 0.4s ease-in-out;
