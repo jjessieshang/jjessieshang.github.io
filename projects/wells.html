@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BitCan</title>
     <link rel="stylesheet" href="../assets/css/index.css">
     <link rel="stylesheet" href="index.css">
 </head>
@@ -20,27 +20,58 @@
 <body>
     <div class="project">
         <h3 class="project-title">alberta well locator</h3>
-        <img src="../assets/wells.png" alt="wells">
-        <p>2022</p>
-        <p>Role: Software Engineer Intern</p>
-        <p>Technologies: Flask, Folium, Python (Pandas, NumPy), SQLite</p>
-        <p>Stakeholder: BitCan Geosciences</p>
-    
-        <p>Problem: <br>Geoscientists at this firm required a tool to make the well selection process more efficient.
-        </p>
-        <p>Solution: <br>The Alberta Well Locator Program is a data visualisation tool that allows the user to interact 
-            with BitCan’s directory of well sites. Given any input Unique Well Identifier (UWI), the web app maps the 
-            point of interest, calculates the distance between the input UWI and all existing well sites, and displays 
-            rock lithology, in-situ, and mechanical properties associated with each well.
-        </p>
-        <p>Data processing: <br> Using Pandas and NumPy, I plotted the Alberta Dominion Land Survey Grid as a planar 
-            projection and utilized the Alberta Township System (ATS) version 4.1 (NAD83) dataset to convert the entire 
-            set of Unique Well Identifier Numbers to geographical coordinates. This mapping tool then computes the distance 
-            between well locations by applying the Haversine Formula for great-circle distance.</p>
-
-        <img src="../assets/bitcan/data.png" alt="">
-        <img src="../assets/bitcan/popup.png" alt="">
-
+        <img class="main-image" src="../assets/wells.png" alt="wells">
+        <div class="about-project">
+            <p><strong>Date: </strong>August 2022</p>
+            <p><strong>Role:</strong> Full Stack Developer</p> 
+            <p><strong>Technologies:</strong> Flask, Folium, Python (Pandas, NumPy), SQLite</p>
+            <p><strong>Company: </strong>BitCan Geosciences and Engineering</p>
+            <a href="https://github.com/jjessieshang/Alberta_well_locator">
+                <img style="height: 50px; margin-top: 10px; margin-bottom: 30px;"src="../assets/git.png" alt="git"></a>
+            <br>
+        </div>
+        <hr>
+        <div class="body-project">
+            <p class="body-text"><strong>The Problem </strong><br>
+                Geoscientists at this firm required a tool that effectively demonstrates 
+                the relative distance between well sites, while also providing comprehensive land property 
+                information, in order to improve the efficiency of the well selection process.
+            </p>
+            <p class="body-text"><strong>My Solution </strong><br>
+                <video height="450px"src="../assets/wells.mov" controls></video>
+            </p>
+            <p>The Alberta Well Locator Program is a data visualisation tool that allows the user to interact 
+                with BitCan’s directory of well sites. Given any input Unique Well Identifier (UWI), the web app maps the 
+                point of interest, calculates the distance between the input UWI and all existing well sites, and displays 
+                rock lithology, in-situ, and mechanical properties associated with each well.</p>
+            <p class="body-text"><strong>☑️ Distance Data </strong><br>
+                The most challenging aspect of this project was creating the distance calculation feature from scratch.
+                The Alberta Dominion Land Survey System is a grid network dividing the province into equal-sized parcels of land. 
+                However, each section varies slightly in size due to convergence of grid lines near the poles and divergence near the equator. 
+                I created a mapping from known ATS locations to coordinates of latitude and longitude, then imputed missing values using the 
+                k-nearest-neighbours method to create a 
+                comprehensive dataset.
+            </p>
+            <p><strong>  This tool performs distance calculations with 99% accuracy using the Haversine great-circle formula.</strong></p>
+            <hr>
+            <p class="body-text"><strong>Other Features</strong></p>
+            <div class="grid">
+                <div class="grid-text">
+                    <p class="grid-image" >Visualize various land properties</p>
+                </div>
+                <div class="inline-block">
+                    <img class="main-image" src="../assets/bitcan/layers.png" style="height: 338px;"alt="layers">
+                </div>
+            </div>
+            <div class="grid">
+                <div class="grid-text">
+                    <p class="body-text" >Mantain database easily from the front-end</p>
+                </div>
+                <div class="grid-image">
+                    <img class="main-image" src="../assets/bitcan/data.png" style="height: 200px;" alt="data">
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>
