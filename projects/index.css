@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700&family=Karla:ital,wght@1,200&family=Kumbh+Sans:wght@400;700&family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Mulish:wght@300;400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Raleway:wght@100;200;300&display=swap');
 
 p {
-    font-family: Inter,san-serif;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 hr {
@@ -21,8 +21,13 @@ strong {
 }
 
 .project-title {
-    font-size: 6em;
+    font-size: 4em;
     font-weight: 500;
+    text-align: center;
+}
+
+.summary {
+  text-align: center;
 }
 
 a {
@@ -36,6 +41,15 @@ a {
     max-width: 100%;
     max-height: 100%;
     height: inherit !important;
+
+}
+
+.main-image-hyrs {
+  display: block;
+  margin: 20px auto;
+  max-width: 90%;
+  max-height: 100%;
+  height: inherit !important;
 
 }
 
@@ -55,7 +69,7 @@ li {
 
 img {
     height: 500px;
-    border-radius: 10px;
+    border-radius: 1px;
 }
 
 .hyrs {
