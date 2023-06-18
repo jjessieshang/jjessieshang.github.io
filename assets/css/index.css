@@ -140,6 +140,11 @@
   .me {
     grid-column: 1;
     grid-row: 1;
+    max-width: 90%;
+    max-height: 80%;
+    height: inherit !important;
+    border-radius: 300px; 
+    margin-top: 50px;
   }
 
   hr {
@@ -300,6 +305,9 @@
   .cover img {
     margin: 2rem;
     display: block;
-    margin: 2rem 2rem;
+    margin: 2rem 2rem 2rem 2rem;
     border-radius: 15px;
+    max-width: 88%;
+    max-height: 85%;
+    height: inherit !important;
   }
