@@ -76,8 +76,10 @@
 
     <h2 style="padding-top: 1.5em; padding-bottom: .5em;"><strong>My Works</strong></h2>
     <!-- row 1 -->
-    <div class="projects">
-        <button class="container1"
+
+    <div class="main-content">
+        <div class="main-row">
+            <button class="column"
             onclick="gotolink(this)" value="projects/labby.html">
             <div class="cover">
                 <img src="assets/labby.png" alt="labby">
@@ -87,98 +89,84 @@
                 <h3><strong>labby</strong></h3>
                 <p>a labratoy management system for BC Cancer.</p>
             </div>
-            <br>
-            <div class="skill">
-                <p class="date">Full-Stack</p><p class="date">Database</p>
-            </div>
-        </button>
-
-        <button class="container2"
-        onclick="gotolink(this)" value="projects/heidi.html">
-        <div class="cover">
-            <img src="assets/heidi.png" alt="labby">
+                <br>
+                <div class="skills">
+                    <div class="item">Full Stack</div>
+                    <div class="item">Database</div>
+                </div>
+            </button>
+            <button class="column"
+                onclick="gotolink(this)" value="projects/heidi.html">
+                <div class="cover">
+                    <img src="assets/heidi.png" alt="labby">
+                </div>
+        
+                <div class="description">
+                    <h3><strong>heidi</strong></h3>
+                    <p>can machine learning reduce ED overpopulation?</p>
+                </div>
+                <br>
+                <div class="skills">
+                    <div class="item">Publication</div>
+                    <div class="item">Research</div>
+                </div>
+            </button>
         </div>
-
-        <div class="description">
-            <h3><strong>heidi</strong></h3>
-            <p>can machine learning models reduce emergency department overpopulation?</p>
-        </div>
-        <br>
-        <div class="skill">
-            <p class="date">Publication</p><p class="date">Research</p>
-        </div>
-    </button>
-
-
     </div>
 
-    <!-- row 2 -->
-    <div class="projects">
-        <button class="container1"
+    <div class="main-content">
+        <div class="main-row">
+            <button class="column"
+                onclick="gotolink(this)" value="projects/wells.html">
+                <div class="cover">
+                    <img src="assets/wells.png" alt="wells">
+                </div>
+
+                <div class="description">
+                    <h3><strong>well locator</strong></h3>
+                    <p>Alberta geospatial data presented visually.</p>
+                </div>
+                <br>
+                <div class="skills">
+                    <div class="item">Full Stack</div>
+                </div>
+            </button>
+            <button class="column"
+                onclick="gotolink(this)" value="projects/alberta.html">
+                <div class="cover">
+                    <img src="assets/website.png" alt="labby">
+                </div>
+
+                <div class="description">
+                    <h3><strong>move improve</strong></h3>
+                    <p>improving the safety of walking aid use.</p>
+                </div>
+                <br>
+                <div class="skills">
+                    <div class="item">Mobile App</div>
+                    <div class="item">Research</div>
+                </div>
+            </button>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="main-row">
+            <button class="column"
             onclick="gotolink(this)" value="projects/enable.html">
-            <div class="cover">
-                <img src="assets/enable.png" alt="enable">
-            </div>
-
-            <div class="description">
-                <h3><strong>biofeedback sensor</strong></h3>
-                <p>assistive device design for the Simon Cox 2021.</p>
-            </div>
-            <br>
-            <div class="skill">
-                <p class="date">Embedded Systems</p>
-            </div>
-        </button>
-
-        <button class="container2"
-            onclick="gotolink(this)" value="projects/wells.html">
-            <div class="cover">
-                <img src="assets/wells.png" alt="wells">
-            </div>
-
-            <div class="description">
-                <h3><strong>well locator</strong></h3>
-                <p>Alberta geospatial data presented visually.</p>
-            </div>
-            <br>
-            <div class="skill">
-                <p class="date">Full-Stack<p class="date">Visualisation</p>
-            </div>
-        </button>
-    </div>
-
-    <!-- row three -->
-    <div class="projects">
-        <button class="container1"
-        onclick="gotolink(this)" value="projects/alberta.html">
-            <div class="cover">
-                <img src="assets/website.png" alt="labby">
-            </div>
-
-            <div class="description">
-                <h3><strong>biomechanics</strong></h3>
-                <p>improving the safety of walking aid use.</p>
-            </div>
-            <br>
-            <div class="skill">
-                <p class="date">Research</p><p class="date">Award</p>
-            </div>
-        </button>
-
-        <!-- <button class="container2">
-            <div class="cover">
-                <img src="assets/wells.png" alt="labby" style="max-height: 350px;">
-            </div>
-
-            <div class="description">
-                <h3>well Locator</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-
-            <div class="skill">
-                <p class="date">Database</p><p class="date">Database</p>
-            </div>
-        </button> -->
+                <div class="cover">
+                    <img src="assets/enable.png" alt="enable">
+                </div>
+    
+                <div class="description">
+                    <h3><strong>biofeedback device</strong></h3>
+                    <p>improving the safety of walking aid use.</p>
+                </div>
+                <br>
+                <div class="skills">
+                    <div class="item">Engineering</div>
+                </div>
+            </button>
+        </div>
     </div>
 
     <script src="js/index.js"></script>
