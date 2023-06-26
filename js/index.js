@@ -3,10 +3,13 @@
 const plusButtons = document.querySelectorAll('.plus');
 
 function scrollToMyDiv(element) {
-  console.log("scroll");
+  var windowHeight = window.innerHeight;
+  var elementHeight = element.offsetHeight;
+  var padding = (windowHeight - elementHeight) / 2 + 50;
+
   window.scroll({
-    top: element.offsetTop,
-    left: 0,    
+    top: element.offsetTop - padding,
+    left: 0,
     behavior: 'smooth'
   });
 };
@@ -18,7 +21,7 @@ plusButtons.forEach(btn => {
     const isReadMoreOpen = text.classList.toggle('read-more--open');
 
     if (isReadMoreOpen) {
-      var element = document.querySelectorAll('.banner');
+      var element = document.querySelectorAll('.experience-num');
       scrollToMyDiv(element[0]);
     }
   });

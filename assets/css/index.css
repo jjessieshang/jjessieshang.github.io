@@ -62,6 +62,7 @@
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
     color: var(--text-color);
+    padding-bottom: 40px;
   }
   
   h1 {
@@ -146,12 +147,19 @@
   }
 
   .icon {
-    height: 30px;
+    height: 54px;
     margin: 5px;
     margin-right: 5px;
+
+  }
+  .icon1 {
+    height: 55px;
+    margin: 5px;
+    margin-right: 5px;
+    padding-bottom: 2px;
   }
   .icon2 {
-    height: 37px;
+    height: 60px;
     margin: 2px 5px;
   }
 
@@ -202,17 +210,18 @@
     height: 0;
     opacity: 0;
     transition: all .3s;
+    width: 90%;
+    margin: auto;
   }
 
   .read-more--open{
     display: block;
     opacity: 1;
-    height: 10rem;
+    height: auto;
   }
 
   .tab {
     display: inline-block;
-    margin-left: 40px;
   }
 
   .redirect {
@@ -342,4 +351,35 @@
 	opacity: 1;
 	top: 0;
 	scale: 1;
+}
+
+
+/* footer */
+
+ul.social {
+  margin: 0;
+  padding: 0;
+  padding-top: 2em;
+  width: 100%;
+  text-align: center;
+}
+
+ul.social > li {
+  display: inline-block;
+}
+
+ul.social > li > a {
+  display: inline-block;
+  /* font-size: 18px;
+  line-height: 30px;
+  width: 45px;
+  height: 45px;
+  border-radius: 36px;
+  background-color: var(--body-color);
+  color: #fff;
+  margin: 0 3px 3px 0; */
+}
+
+ul.social > li > a:hover {
+  text-decoration: none;
 }
