@@ -133,7 +133,7 @@
 
   .banner {
     box-sizing: border-box;
-    padding-right: 0px;
+    padding-right: 20px;
     padding-top: 20vh;
     margin: auto;
     width: 90%;
@@ -147,22 +147,6 @@
     transition: all 0.5s;
   }
 
-  /* .icon {
-    height: 54px;
-    margin: px;
-    margin-right: 5px;
-
-  }
-  .icon1 {
-    height: 55px;
-    margin: px;
-    margin-right: 5px;
-    padding-bottom: 2px;
-  }
-  .icon2 {
-    height: 60px;
-    margin: 2px 5px;
-  } */
 
   /* work experiences grid */
 
