@@ -1,5 +1,5 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Karla:ital,wght@1,200&family=Kumbh+Sans:wght@400;700&family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Mulish:wght@300;400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Raleway:wght@100;200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700&family=Karla:ital,wght@1,200&family=Kumbh+Sans:wght@400;700&family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Mulish:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Raleway:wght@100;200;300&display=swap');
 :root {
     --header-height: 3.5rem;
   
@@ -55,7 +55,7 @@
   
   body {
     max-width: 1300px;
-    width: 85%;
+    width: 80%;
     margin: 0 auto;
     float: none;
     font-family: var(--body-font);
@@ -65,21 +65,29 @@
   }
   
   h1 {
-    color: Helvetica,san-serif;
+    color: var(--title-color);
     line-height: 1.2;
-    font-family: Poppins, sans-serif;
-    font-weight: 400;
-    font-size: 80px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 3rem;
+    font-weight: 550;
 
   }
 
-  h2 {
-    padding-top: .75em;
-    color: var(--title-color);
-    font-family: "Helvetica Neue";
-    font-size: 3.2rem;
-    text-align: left;
-    font-weight: bold;
+  .contrast-letter{
+    display: inline;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #000, 1px 1px 1px #000, -1px 0 0 #000, 1px 0 0 #000, 0 -1px 1px #000, 1px 1px 0 #000;
+  }
+
+  .highlight-letter {
+    display: inline;
+    text-decoration: underline;
+    text-decoration-color: rgb(236, 240, 153);
+  }
+
+  .letter {
+    display: inline;
   }
 
   h3 {
@@ -98,65 +106,35 @@
   /* navbar */
   .header {
     display: flex;
-    width: 100%;
+    width: 90%;
     justify-content: space-between;
-    align-items: center;
-    padding-top: 1.5em;
+    margin: auto;
+    padding-top: 2em;
     padding-bottom: 30px;
   }
 
+
   .logo {
-    font-size: 50px;
-    color: var(--title-color);
+    font-size: 15px;
     text-decoration: none;
-    font-weight: bold;
-    font-family: var(--title-font);
-  }
+    font-family: 'Lato', sans-serif;
+    color: black;
+   }
 
   .navbar a {
-    font-size: var(--h2-font-size);
+    font-size: 15px;
     color: var(--title-color);
     text-decoration: none;
     margin-left: 40px;
+    font-family: 'Lato', sans-serif;
   }
 
-  .profile {
-    height: 75vh;
-    display: flex;
-    flex-wrap: wrap;
-    max-height: 1000px;
-  }
-
-  .profile-grid {
-    padding: 0 3em;
-    display: grid;
-    height: inherit;
-    grid-template-columns: 1fr 1fr;
-    min-width: 0px;
-  }
-  .profile-words{
-    min-width: 0px;
-    grid-column: 2;
-    grid-row: 1;
-    padding-top: 10vh;
-    overflow: scroll;
-    height: inherit;
-  }  
-
-  .profile-words p{
-    font-size: 14px;
-    line-height: 1.5; 
-    padding-left: 50px;
-    margin-right: 10px;
-  }
-  
-  .me {
-    padding-left: 1em;
-    min-width: 0px;
-    grid-column: 1;
-    grid-row: 1;
-    max-width: 75%;
-    height: inherit !important;
+  .banner {
+    box-sizing: border-box;
+    padding-right: 0px;
+    padding-top: 20vh;
+    margin: auto;
+    width: 90%;
   }
 
   hr {
@@ -164,6 +142,7 @@
     border: none;
     border-top: 0.5px solid black;
     margin: 1em 0;
+    transition: all 0.5s;
   }
 
   .icon {
@@ -179,59 +158,56 @@
   /* work experiences grid */
 
 
-  .experience {
-    margin-top: 10px;
-    font-size: var(--normal-font-size);
-    font-weight: 1500;
-    padding-left: 250px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  }
   .experience p {
     color: black;
   }
   .experience-p {
-    padding-left: 250px;
     color: black;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    transition: all 0.5s;
   }
   .experience-num {
     float: left;
-    font-size: var(--normal-font-size);
+    font-size: 1rem;
     line-height: 0;
     margin-top: 1em;
     color: black;
+    font-weight: 300;
     text-decoration: none;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Lato', sans-serif;
   }
 
   .card {
-    padding: 0 3em;
+    margin: auto;
+    width: 90%;
+    padding-top: 8.5vh;
   }
 
   .plus {
-    height: 40px;
+    height: 25px;
     margin-top: .5em;
-    transition: all 0.5s;
     float: right;
   }
 
   .plus:hover {
     cursor: pointer;
     transform: translateY(-3px);
-    box-shadow: 0 3px 0 black;
+    box-shadow: 0 1px 0 black;
   }
 
   .read-more {
     display: block;
     height: 0;
     opacity: 0;
-    transition: all 0.5s;
+    transition: all .3s;
   }
 
   .read-more--open{
     display: block;
     opacity: 1;
-    height: 18rem;
+    height: 10rem;
   }
 
   .tab {
@@ -239,42 +215,29 @@
     margin-left: 40px;
   }
 
+  .redirect {
+    text-decoration: none;
+    color: black;
+    transition: transform .3s ease-out;
+    display: inline-block;
+  }
+
+  .redirect:hover {
+    cursor: pointer;
+    transform: translate(0, -5px);
+  }
+
 
 /*  project grid */
 
-
-  .project-page {
-    text-decoration: none;
-    color: initial;
+.projects-title {
+  padding-top: 10vh;
+  margin: auto;
+  width: 90%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
 }
-
-
-  .skill {
-    grid-row: 3;
-    height: 35px;
-    margin: 2rem 2rem;
-    grid-column: inherit;
-  }
-
-  .skill p {
-   background-color: black;
-    display: inline;
-    padding: .5rem 1rem;
-    border-radius: 5px;
-    border-width: 1.5px;
-    border-style: solid;
-    color: white;
-    font-size: 16px;
-    margin-right: 1rem;
-  }
-
-  /* .cover {
-    grid-column: inherit;
-    min-width: 0px;
-  } */
-
-
-/* website layout */
 .main-content {
   width: 95%;
   margin: auto;
@@ -363,4 +326,20 @@
   margin-right: .5em;
   font-size: 16px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.demo {
+  scale: 0.94;
+	opacity: 0;
+	transition: 0.9s;
+	transition-timing-function: cubic-bezier(0.5, 0, 0, 1);
+}
+
+/* section */
+
+
+.active {
+	opacity: 1;
+	top: 0;
+	scale: 1;
 }

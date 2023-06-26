@@ -2,13 +2,46 @@
 //toggle experiences read more
 const plusButtons = document.querySelectorAll('.plus');
 
+function scrollToMyDiv(element) {
+  console.log("scroll");
+  window.scroll({
+    top: element.offsetTop,
+    left: 0,    
+    behavior: 'smooth'
+  });
+};
+
 plusButtons.forEach(btn => {
   btn.addEventListener('click', () => {
     const card = btn.closest('.card');
     const text = card.querySelector('.read-more');
-    text.classList.toggle('read-more--open');
+    const isReadMoreOpen = text.classList.toggle('read-more--open');
+
+    if (isReadMoreOpen) {
+      var element = document.querySelectorAll('.banner');
+      scrollToMyDiv(element[0]);
+    }
   });
 });
+
+
+
+
+function scrollReveal() {
+	var revealPoint = 150;
+	var revealElement = document.querySelectorAll(".demo");
+	for (var i = 0; i < revealElement.length; i++) {
+		var windowHeight = window.innerHeight;
+		var revealTop = revealElement[i].getBoundingClientRect().top;
+		if (revealTop < windowHeight - revealPoint) {
+			revealElement[i].classList.add("active");
+		} else {
+			revealElement[i].classList.remove("active");
+		}
+	}
+};
+
+window.addEventListener("scroll", scrollReveal);
 
 //link to projects
 function gotolink(link) {
@@ -73,3 +106,4 @@ function showSlides2(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
