@@ -376,3 +376,44 @@ ul.social > li > a:hover {
   position: relative;
   height: 20px;
 }
+
+/* card */
+.cardlink {
+  display: inline-block;
+  position: relative;
+  margin: 10px;
+}
+
+.cardlink img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  height: auto;
+  vertical-align: middle;
+}
+
+.cardlink:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.cardlink:hover .button-overlay {
+  display: block;
+}
+
+.button-overlay {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.button-overlay a {
+  color: white;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
