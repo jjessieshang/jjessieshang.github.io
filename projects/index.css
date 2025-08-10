@@ -18,6 +18,7 @@ hr {
 strong {
     font-weight: bold;
 }
+
 .project {
     width: 70%;
     margin: 0 auto;
@@ -69,6 +70,7 @@ li {
 
 .body-text {
     margin-top: 1em;
+    font-weight: normal;
 }
 
 img {
