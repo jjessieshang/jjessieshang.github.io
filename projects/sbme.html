@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SBME</title>
+    <link rel="stylesheet" href="../assets/css/index.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<header class="header">
+    <a href="../index.html" class="logo">JESSIE SHANG</a>
+
+    <!-- menu -->
+    <nav class="navbar">
+        <a href="../projects/about.html">ABOUT</a>
+        <a href="https://github.com/jjessieshang"><img class="icon3"src="../assets/git.png" alt=""></a>
+        <a href="https://www.linkedin.com/in/shangjessie/"><img class="icon3"src="../assets/in.png" alt=""></a>
+        <a href="mailto:jyshang@student.ubc.ca"><img class="icon3"src="../assets/mail.png" alt=""></a>
+    </nav>
+</header>
+<body>
+    <div class="project">
+        <h3 class="project-title">ML Research</h3>
+        <p class ="summary"><em>Jan 2025 - May 2025 / SBME Research Symposium 2025 </em></p>
+
+         <hr>
+        <p><strong>Technologies:</strong> Python, Pandas, Numpy, Sklearn</p>
+        <p><strong>Supervisor:</strong> Dr. Roger Tam</p>
+
+        <img class="main-image" src="../assets/sbme/Slide1.jpg" alt="sbme">
+        <div class="about-project">
+
+        </div>
+        <hr>
+        <div class="body-project">
+            <p class="body-text"><strong>Abstract</strong></p>
+            Myocardial scarring underpins adverse cardiovascular outcomes but can only be detected using costly  cardiac magnetic resonance (CMR) imaging. This study investigates the application of machine learning on population-based administrative health data to develop and validate predictive models for myocardial scarring, aiming to assess their accuracy, reliability, and clinical utility in improving resource allocation and patient outcomes.</p>
+
+            <p class="body-text"><strong>Methods</strong></p>
+            A cohort of 724 adult patients with CMRs (2006-2023) was constructed from linked administrative databases in British Columbia, Canada. Sixty-one predictors were extracted, including demographic features, comorbidity history, medication use, and both acute and clinical healthcare utilization. The data was split into an 85/15 training and testing set. We trained and tuned the models using 5-fold cross-validation and evaluated seven machine learning models: Logistic Regression, Support Vector Machine with an RBF kernel, Decision Tree, Random Forest, XGBoost, a Voting, and a Stacking Ensemble of 4 classifiers. Model performance was evaluated using area under the Receiver Operating Characteristic curve (AUROC).
+
+            <p class="body-text"><strong>Results</strong></p>
+            Myocardial scarring was present in 282 of 724 patients (39.0%). The top-performing models were Logistic Regression (AUC: 0.75), SVM (AUC: 0.75), and the Stacking Ensemble (AUC: 0.74). The most important predictors, including myocardial infarction, ischemic heart disease, age, and statin use, were consistent with established risk factors for the development of myocardial scarring.
+
+            <p class="body-text"><strong>Conclusions</strong></p>
+            Machine learning can be applied to administrative health datasets to derive interpretable myocardial scarring risk predictions. The top three performing models in this analysis exhibited consistent predictive ability from the administrative health data features. To improve predictive accuracy, future models could incorporate additional data, from other sources such as electrocardiograms (ECG) and echocardiograms.
+
+            <p class="body-text"><strong>Ongoing Work</strong></p>
+            <ul>
+                <li><p>Training models with integrated administrative health data and ECG data</p></li>
+                <li><p>Training multi-class models to stratify patient risk</p></li>
+            </ul> 
+        </div>
+    </div>
+</body>
+</html>
