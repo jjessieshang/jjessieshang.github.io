@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goldman Sachs</title>
+
+    <link rel="stylesheet" href="../assets/css/index.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+<header class="header">
+    <a href="../index.html" class="logo">JESSIE SHANG</a>
+
+    <nav class="navbar">
+        <a href="../projects/about.html">ABOUT</a>
+        <a href="https://github.com/jjessieshang">
+            <img class="icon3" src="../assets/git.png" alt="">
+        </a>
+        <a href="https://www.linkedin.com/in/shangjessie/">
+            <img class="icon3" src="../assets/in.png" alt="">
+        </a>
+        <a href="mailto:jyshang@student.ubc.ca">
+            <img class="icon3" src="../assets/mail.png" alt="">
+        </a>
+    </nav>
+</header>
+
+<main class="project">
+    <h3 class="project-title">Goldman Sachs</h3>
+    <p class="summary"><em>June 2024 – Aug 2024 / June 2025 – Aug 2025</em></p>
+    <p class="summary"><em>New York, NY & Toronto, ON</em></p>
+
+    <hr>
+
+    <p><strong>Technologies:</strong> Java, Spring, Kafka Streaming, Databases</p>
+
+    <!-- MAIN IMAGE -->
+    <img class="main-image" src="../assets/GS/GS_me.jpg" alt="Goldman Sachs">
+    <p class="caption">Goldman Sachs New York office</p>
+    <!-- SLIDESHOW -->
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="../assets/GS/boat.jpg" class="slide-img">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="../assets/GS/cn.jpg" class="slide-img">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="../assets/GS/jays.jpg" class="slide-img">
+        </div>
+
+        <!-- Navigation arrows -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <!-- Dots -->
+    <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+</main>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    let i;
+    const slides = document.getElementsByClassName("mySlides");
+    const dots = document.getElementsByClassName("dot");
+
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+}
+</script>
+
+</body>
+</html>
